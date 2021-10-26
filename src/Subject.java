@@ -1,27 +1,26 @@
 public class Subject {
 
-    private int sinhala;
-    private int maths;
+    private String name;
+    private int marks;
 
-    public Subject(int sinhala, int maths) {
-        this.sinhala = sinhala;
-        this.maths = maths;
-      
+    public Subject(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
     }
 
-    public int getSinhala() {
-        return sinhala;
+    public String getName() {
+        return name;
     }
 
-    public void setSinhala(int sinhala) {
-        this.sinhala = sinhala;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getMaths() {
-        return maths;
+    public int getMarks() {
+        return marks;
     }
 
-    public void setMaths(int maths) {
-        this.maths = maths;
+    public void setMarks(int marks) {
+        this.marks = marks;
     }
 }

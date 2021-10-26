@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.ArrayList;
 
 public class Student {
 	private int id;
@@ -12,7 +13,7 @@ public class Student {
 	private String address;
 	private Date dob;
 	private String gender;
-	private Subject subject;
+	private ArrayList<Subject> subjects;
 
 	public Student() {
 		// super();
@@ -64,12 +65,12 @@ public class Student {
 		this.gender = gender;
 	}
 
-	public Subject getSubject() {
-		return subject;
+	public ArrayList<Subject> getSubjects() {
+		return subjects;
 	}
 
-	public void setSubject(Subject subject) {
-		this.subject = subject;
+	public void setSubjects(ArrayList<Subject> subjects) {
+		this.subjects = subjects;
 	}
 
 }
