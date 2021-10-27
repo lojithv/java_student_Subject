@@ -97,26 +97,32 @@ public class StudentList {
         topStudent = S1.get(i);
       }
     }
-    System.out.println(
-        "ID " + "Name " + "       Address" + "           DOB " + "             Gender" + "          calcAge" + "\n");
 
-    System.out.println(topStudent.getId() + "  " + topStudent.getName() + "      " + topStudent.getAddress()
-        + "         " + topStudent.getDob() + "         " + topStudent.getGender() + "       "
-        + calcAge.getAge(topStudent.getDob()));
+    if (topStudent != null) {
+      System.out.println(
+          "ID " + "Name " + "       Address" + "           DOB " + "             Gender" + "          calcAge" + "\n");
 
-    StudentFunction studentFunc = new StudentFunction();
+      System.out.println(topStudent.getId() + "  " + topStudent.getName() + "      " + topStudent.getAddress()
+          + "         " + topStudent.getDob() + "         " + topStudent.getGender() + "       "
+          + calcAge.getAge(topStudent.getDob()));
 
-    // Subject subject = new Subject(10, 29);
+      StudentFunction studentFunc = new StudentFunction();
 
-    println("Student Details : ");
-    println("-----------------------");
-    println("Student Id : " + topStudent.getId());
-    println("Name : " + topStudent.getName() + "\n");
-    println("Subject" + "        " + "Grade");
+      // Subject subject = new Subject(10, 29);
 
-    topStudent.getSubjects().forEach(subject -> {
-      println(subject.getName() + " " + "       " + studentFunc.getGrade(subject.getMarks()));
-    });
+      println("Student Details : ");
+      println("-----------------------");
+      println("Student Id : " + topStudent.getId());
+      println("Name : " + topStudent.getName() + "\n");
+      println("Subject" + "        " + "Grade");
+
+      topStudent.getSubjects().forEach(subject -> {
+        println(subject.getName() + " " + "       " + studentFunc.getGrade(subject.getMarks()));
+      });
+
+    } else {
+      println("Invalid Student ID");
+    }
 
   }
 }
