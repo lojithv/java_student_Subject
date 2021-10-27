@@ -19,35 +19,17 @@ class StudentFunction {
         return diff1.getYears();
     }
 
-public String getSinhalaMarks(int sinhala) {
-    if (sinhala > 0 && sinhala < 40) {
-        return "F";
-    } else if (sinhala > 39 && sinhala < 55) {
-        return "S";
-    } else if (sinhala > 54 && sinhala < 65) {
-        return "C";
-    } else if (sinhala > 64 && sinhala < 75) {
-        return "B";
-    } else {
-        return "A";
+    public String getGrade(int marks) {
+        if (marks > 0 && marks < 40) {
+            return "F";
+        } else if (marks > 39 && marks < 55) {
+            return "S";
+        } else if (marks > 54 && marks < 65) {
+            return "C";
+        } else if (marks > 64 && marks < 75) {
+            return "B";
+        } else {
+            return "A";
+        }
     }
 }
-
-public String getMathstMarks(int maths) {
-    if (maths > 0 && maths < 40) {
-        return "F";
-    } else if (maths > 39 && maths < 55) {
-        return "S";
-    } else if (maths > 54 && maths < 65) {
-        return "C";
-    } else if (maths > 64 && maths < 75) {
-        return "B";
-    } else {
-        return "A";
-    }    
-}
-}
-
-
-
-

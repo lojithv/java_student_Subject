@@ -116,7 +116,7 @@ public class StudentList {
         println("Subject" + "        " + "Grade");
 
         topStudent.getSubjects().forEach(subject -> {
-          println(subject.getName() + " " + "       " + studentFunc.getMathstMarks(subject.getMarks()));
+          println(subject.getName() + " " + "       " + studentFunc.getGrade(subject.getMarks()));
         });
 
       }
